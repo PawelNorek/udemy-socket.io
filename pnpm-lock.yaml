@@ -8,9 +8,6 @@ dependencies:
   express:
     specifier: ^4.18.2
     version: 4.18.2
-  http:
-    specifier: 0.0.1-security
-    version: 0.0.1-security
   nodemon:
     specifier: ^3.0.1
     version: 3.0.1
@@ -393,10 +390,6 @@ packages:
       setprototypeof: 1.2.0
       statuses: 2.0.1
       toidentifier: 1.0.1
-    dev: false
-
-  /http@0.0.1-security:
-    resolution: {integrity: sha512-RnDvP10Ty9FxqOtPZuxtebw1j4L/WiqNMDtuc1YMH1XQm5TgDRaR1G9u8upL6KD1bXHSp9eSXo/ED+8Q7FAr+g==}
     dev: false
 
   /iconv-lite@0.4.24:
