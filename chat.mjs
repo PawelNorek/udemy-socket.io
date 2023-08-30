@@ -18,9 +18,10 @@ app.use(express.static(__dirname + '/public'))
 
 io.on('connection', socket => {
 	console.log(socket.id, ' has connected')
-	socket.emit('messageFromServer', { data: 'Welcome from socket server!' })
-	socket.on('messageFromClient', data => {
-		console.log(data.data)
+	// socket.emit('messageFromServer', { data: 'Welcome from socket server!' })
+	socket.on('newMessageToServer', dataFromClient => {
+		console.log(dataFromClient.text)
+		io.emit('newMessageToClients', { text: dataFromClient.text })
 	})
 })
 
